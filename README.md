@@ -1,7 +1,7 @@
 # Bashlamazdan evvel
 
- [Scss / Sass ](https://github.com/facebook/create-react-app) ile yaziriq
- [bem naming ](https://github.com/facebook/create-react-app) ile yaziriq (https://getbem.com/naming/)
+ [Scss / Sass ](https://sass-lang.com/) ile yaziriq
+ [bem naming ](https://getbem.com/naming/) ile yaziriq 
  
  
  
