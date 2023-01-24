@@ -6,29 +6,32 @@ const Footer = () => {
     <footer>
       <section id="first">
         <div className="custom-container">
-          <div id="logo">
-            <img src={Logo} alt="" />
+          <div>
+            <div id="logo">
+              <img src={Logo} alt="" />
+            </div>
           </div>
-          <div id="location">
-            <h5>Ünvanlarımız</h5>
-            <ul>
-              <li>Ak. Həsən Əliyev 82F</li>
-              <li>
-                Telefon:
-                <a href="tel:+994 55 465 22 52"> +994 55 465-22-52</a>
-                <br />
-                <a href="tel:+994 012 465-22-52">012 465-22-52</a>
-              </li>
-              <li>
-                Email:
-                <a href="mailto:officedefendo@gmail.com">
-                  {" "}
-                  officedefendo@gmail.com
-                </a>
-              </li>
-            </ul>
+          <div>
+            <div id="footer-item">
+              <h5>Ünvanlarımız</h5>
+              <ul>
+                <li>Ak. Həsən Əliyev 82F</li>
+                <li>
+                  Telefon:
+                  <a href="tel:+994 55 465 22 52"> +994 55 465-22-52</a>
+                  <a href="tel:+994 012 465-22-52">012 465-22-52</a>
+                </li>
+                <li>
+                  Email:
+                  <a href="mailto:officedefendo@gmail.com">
+                    {" "}
+                    officedefendo@gmail.com
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div id="navbar">
+          <div id="footer-item">
             <h5>De Fendo</h5>
             <ul>
               <li>
@@ -45,7 +48,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div id="useful">
+          <div id="footer-item">
             <h5>Faydalı keçidlər</h5>
             <ul>
               <li>
@@ -68,10 +71,12 @@ const Footer = () => {
       </section>
       <section id="second">
         <hr />
-        <p>
-          Copyright © - {new Date().getFullYear()}. De Fendo saytı, Weblash
-          komandası tərəfindən hazırlanıb.
-        </p>
+        <div className="custom-container">
+          <p>
+            Copyright © - {new Date().getFullYear()}. De Fendo saytı, Weblash
+            komandası tərəfindən hazırlanıb.
+          </p>
+        </div>
       </section>
     </footer>
   );

@@ -6,7 +6,7 @@
   // font-family: 'Merriweather', serif;
 }
 .custom-container {
-  width: 1200px;
+  width: 80%;
   margin: 0 auto;
 }
 footer {
@@ -27,12 +27,13 @@ footer {
           height: 150px;
         }
       }
-      #location {
+      #footer-item {
         h5 {
           font-weight: 700;
           font-size: 16px;
           line-height: 28px;
           color: #fff;
+          padding: 0 0 0px 0;
         }
         ul {
           list-style: none;
@@ -40,28 +41,6 @@ footer {
           padding: 0;
           li {
             color: #fff;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 25.6px;
-            a {
-              text-decoration: none;
-              color: #fff;
-            }
-          }
-        }
-      }
-      #navbar {
-        h5 {
-          font-weight: 700;
-          font-size: 16px;
-          line-height: 28px;
-          color: #fff;
-        }
-        ul {
-          list-style: none;
-          margin: 0;
-          padding: 0;
-          li {
             a {
               text-decoration: none;
               color: #fff;
@@ -86,60 +65,37 @@ footer {
           }
         }
       }
-      #useful {
-        h5 {
-          font-weight: 700;
-          font-size: 16px;
-          line-height: 28px;
-          color: #fff;
+      $breakpoint-tablet: 768px;
+      @media (max-width: $breakpoint-tablet) {
+        display: block;
+        #logo {
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
-        ul {
-          list-style: none;
-          margin: 0;
-          padding: 0;
-          li {
-            a {
-              text-decoration: none;
-              color: #fff;
-              font-weight: 400;
-              font-size: 16px;
-              line-height: 25.6px;
-              width: min-content;
-              &::after {
-                content: " ";
-                display: block;
-                width: auto;
-                height: 1px;
-                background-color: #fff;
-                opacity: 0;
-                transition: 500ms all ease-in;
-              }
-              &:hover {
-                &::after {
-                  opacity: 0.5;
-                }
-              }
-            }
-          }
+        #footer-item {
+          padding: 15px 0;
         }
       }
     }
   }
   #second {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
     hr {
       width: 100%;
       color: #fff;
     }
-    p {
-      color: #fff;
-      padding: 0;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 22.4px;
+    .custom-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      p {
+        color: #fff;
+        padding: 0;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22.4px;
+      }
     }
   }
 }
