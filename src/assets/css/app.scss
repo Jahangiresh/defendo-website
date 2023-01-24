@@ -11,10 +11,6 @@
 }
 footer {
   background-color: #2d4e9d;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 100%;
   #first {
     padding: 40px 0;
     .custom-container {
@@ -40,6 +36,7 @@ footer {
           margin: 0;
           padding: 0;
           li {
+            display: flex;
             color: #fff;
             a {
               text-decoration: none;
