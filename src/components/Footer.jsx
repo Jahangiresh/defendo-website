@@ -16,15 +16,13 @@ const Footer = () => {
               <h5>Ünvanlarımız</h5>
               <ul>
                 <li>Ak. Həsən Əliyev 82F</li>
-                <li>
+                <li className="number">
                   Telefon:
-                  <a href="tel:+994 55 465 22 52"> +994 55 465-22-52</a>
-                  <a href="tel:+994 012 465-22-52">012 465-22-52</a>
+                  <a href="tel:+994 55 465 22 52">+994 55 465-22-52</a>
                 </li>
                 <li>
                   Email:
                   <a href="mailto:officedefendo@gmail.com">
-                    {" "}
                     officedefendo@gmail.com
                   </a>
                 </li>
